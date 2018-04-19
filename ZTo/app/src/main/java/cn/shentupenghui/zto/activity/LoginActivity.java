@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText editText_passwd = (EditText) findViewById(R.id.passwd);
         Button btn_login = (Button) findViewById(R.id.btn_login);
         //获得SharedPreferences,创建文件shentupenghui
-        final SharedPreferences sharedPreferences = getSharedPreferences("shentupenghui", MODE_PRIVATE);
+        final  SharedPreferences sharedPreferences = getSharedPreferences("shentupenghui", MODE_PRIVATE);
         //判断账号密码和后台相同时，直接登录
         if (sharedPreferences.getString("username", username) != null && sharedPreferences.getString("passwd", passwd) != null) {
             if (sharedPreferences.getString("username", username).equals(DEFAULT_USERNAME) && sharedPreferences.getString("passwd", passwd).equals(DEFAULT_PASSWD)) {

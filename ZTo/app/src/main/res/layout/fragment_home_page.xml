@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018.
+  ~ Created by shentupenghui
+  ~ Last modified 18-4-19 下午3:07
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomePageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_page_user_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/home_page_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/home_page_user_head"
+            android:layout_toRightOf="@id/home_page_user_head"
+            android:padding="5dp"
+            android:text="201526810412"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/home_page_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/home_page_user_id"
+            android:layout_toRightOf="@id/home_page_user_head"
+            android:padding="5dp"
+            android:text="申屠鹏会"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/home_page_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/home_page_user_head"
+            android:background="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/home_page_text_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_page_line1"
+            android:padding="5dp"
+            android:text="公告: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/home_page_text_new_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/home_page_text_notice"
+            android:layout_toRightOf="@id/home_page_text_notice"
+            android:padding="5dp"
+            android:text="系统正式上线啦～"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/home_page_line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/home_page_text_notice"
+            android:background="#E4E4E4" />
+
+        <View
+            android:id="@+id/home_page_line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/home_page_line2"
+            android:layout_marginTop="48dp"
+            android:background="#E4E4E4" />
+
+        <TextView
+            android:id="@+id/home_page_classtable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_page_line3"
+            android:text="今日课表"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/home_page_line4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/home_page_classtable"
+            android:background="#E4E4E4" />
+
+        <ListView
+            android:id="@+id/home_page_classtable_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/home_page_line4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:dividerHeight="0dp"
+            android:scrollbars="none">
+
+        </ListView>
+    </RelativeLayout>
+
+
+</FrameLayout>
