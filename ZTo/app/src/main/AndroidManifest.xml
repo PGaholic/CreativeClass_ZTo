@@ -20,6 +20,7 @@
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,7 +29,9 @@
             android:label="@string/layout_label_login" />
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.ModifyProfileActivity"></activity>
     </application>
 
 </manifest>

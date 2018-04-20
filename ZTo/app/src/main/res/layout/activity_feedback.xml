@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018.
+  ~ Created by shentupenghui
+  ~ Last modified 18-4-20 上午10:24
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FeedbackActivity">
+
+    <ImageView
+        android:id="@+id/feedback_title_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:padding="10dp"
+        android:src="@drawable/edit"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+    <EditText
+        android:id="@+id/feedback_text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/feedback_title_icon"
+        app:layout_constraintBottom_toBottomOf="@id/feedback_title_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="15dp"
+        android:hint="请填写反馈标题"/>
+    <Button
+        android:id="@+id/feedback_btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/feedback_text_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f4f4f4"
+        android:hint="请填写反馈内容"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/feedback_text_title"
+        app:layout_constraintBottom_toTopOf="@id/feedback_btn_commit"
+        app:layout_constraintLeft_toLeftOf="@id/feedback_text_title"
+        app:layout_constraintRight_toRightOf="@id/feedback_text_title"/>
+</android.support.constraint.ConstraintLayout>
