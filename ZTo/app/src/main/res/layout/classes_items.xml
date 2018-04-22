@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018.
+  ~ Created by shentupenghui
+  ~ Last modified 18-4-21 上午9:18
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/classes_items_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/classes_items_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/classes_items_img"
+        android:layout_toRightOf="@id/classes_items_img"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/classes_items_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/classes_items_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

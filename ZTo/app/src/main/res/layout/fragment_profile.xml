@@ -9,101 +9,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/profile_user_head"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/head"
-        android:layout_margin="16dp"
-        android:layout_alignParentLeft="true"/>
-    <TextView
-        android:id="@+id/profile_user_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="201526810412"
-        android:textSize="20sp"
-        android:padding="5dp"
-        android:layout_toRightOf="@id/profile_user_head"
-        android:layout_alignBottom="@id/profile_user_head"/>
-    <TextView
-        android:id="@+id/profile_user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="申屠鹏会"
-        android:textSize="20sp"
-        android:padding="5dp"
-        android:layout_toRightOf="@id/profile_user_head"
-        android:layout_above="@id/profile_user_id"/>
-    <View
-        android:id="@+id/profile_line1"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E4E4E4"
-        android:layout_below="@id/profile_user_head"/>
-    <TextView
-        android:id="@+id/profile_modify"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="个人资料修改"
-        android:textSize="21sp"
-        android:padding="10dp"
-        android:layout_below="@id/profile_line1"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:id="@+id/profile_line2"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E4E4E4"
-        android:layout_below="@id/profile_modify"/>
-    <TextView
-        android:id="@+id/profile_donate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="赞赏"
-        android:textSize="21sp"
-        android:padding="10dp"
-        android:layout_below="@id/profile_line2"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:id="@+id/profile_line3"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E4E4E4"
-        android:layout_below="@id/profile_donate"/>
-    <TextView
-        android:id="@+id/profile_feedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="反馈"
-        android:textSize="21sp"
-        android:padding="10dp"
-        android:layout_below="@id/profile_line3"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:id="@+id/profile_line4"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E4E4E4"
-        android:layout_below="@id/profile_feedback"/>
-    <TextView
-        android:id="@+id/profile_about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="关于"
-        android:textSize="21sp"
-        android:padding="10dp"
-        android:layout_below="@id/profile_line4"
-        android:layout_centerHorizontal="true"/>
-    <View
-        android:id="@+id/profile_line5"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#E4E4E4"
-        android:layout_below="@id/profile_about"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_user_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/profile_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/profile_user_head"
+            android:layout_toRightOf="@id/profile_user_head"
+            android:padding="5dp"
+            android:text="201526810412"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/profile_user_id"
+            android:layout_toRightOf="@id/profile_user_head"
+            android:padding="5dp"
+            android:text="申屠鹏会"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/profile_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/profile_user_head"
+            android:background="#E4E4E4" />
+
+        <ListView
+            android:id="@+id/profile_lsit_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_line1"></ListView>
+    </RelativeLayout>
 
 </FrameLayout>

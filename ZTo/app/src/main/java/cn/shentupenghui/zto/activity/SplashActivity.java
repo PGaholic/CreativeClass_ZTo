@@ -6,6 +6,7 @@
 
 package cn.shentupenghui.zto.activity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -28,6 +29,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     public void init() {
+
         TextView copyright = (TextView) findViewById(R.id.text2_version);
         try {
             PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), 0);

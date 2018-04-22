@@ -31,7 +31,11 @@
             android:name=".activity.MainActivity"
             android:label="@string/title_activity_main" />
         <activity android:name=".activity.FeedbackActivity" />
-        <activity android:name=".activity.ModifyProfileActivity"></activity>
+        <activity android:name=".activity.ModifyProfileActivity" />
+        <activity
+            android:name=".activity.ClassDetailActivity"
+            android:label="@string/title_activity_class_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

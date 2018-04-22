@@ -1,0 +1,16 @@
+<!--
+  ~ Copyright (c) 2018.
+  ~ Created by shentupenghui
+  ~ Last modified 18-4-21 下午9:52
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.shentupenghui.zto.activity.ClassDetailActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
